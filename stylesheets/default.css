@@ -1,0 +1,21 @@
+div{
+  background-color: grey;
+}
+nav{
+  display: block;
+}
+ul{
+  display: block;
+  width: 60px;
+}
+.card{
+  width: 30%;
+  height: 20%;
+}
+.card-text{
+  width: 50%;
+  display: block;
+  position: relative;
+  float: right;
+}
+.cl
