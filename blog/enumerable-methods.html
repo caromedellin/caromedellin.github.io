@@ -1,0 +1,68 @@
+<!Doctype html>
+<html>
+<head>
+  <title>DBC Blog</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+</head>
+<body>
+  <header>
+    <h1>Carolina Medellin's Blog</h1>
+    <div>
+      <nav>
+
+      <div class="logo-image">Logo</div>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="">Profile</a>
+          </li>
+          <li>
+            <a href="/blog-template.html">Blog</a>
+          </li>
+          <li>
+            <a href="">Resume</a>
+          </li>
+          <li>
+            <a href="">Contact Info</a>
+          </li>
+        </ul>
+      </div><!-- Logo and links-->
+      </nav><!--End of navbar -->
+  </header>
+  <h2>Enumerable Methods</h2>
+  <article>
+  <div class="main-blog-text">
+    <h3>Map</h3>
+    <p>Allows us to iterate over every method and it changes it and creates another array</p>
+    <p>This piece will grab every element of the array and convert it to a string</p>
+    <p class="ruby-code">
+      arr.map {|x| x.to_s}
+    </p>
+    <p>Ruby also supports this syntax:</p>
+    <p class"ruby-code"> 
+      arr.map(&:to_s)
+     </p>
+     <p>This is useful to debugging later, you can use t with Booleans too!</p>
+     <p class="ruby-code">
+      arr.map(&:odd?)
+     </p>
+    <iframe width="854" height="480" src="https://www.youtube.com/embed/1zWj9BReAX8" frameborder="0" allowfullscreen></iframe>
+    <p>The difference on map and .each, each calls a block once for each element we iterate over and then it passes that element as a parameter. Map does the same but it also creates a new array!
+      Once is finished looping we have a new array with map!
+      makes it unnecessary to add the values created to a new temporary array. We just need to assign the array.map to a variable</p>
+    <p> So we use map new need a new array returned as well, we can use each when we don't necessarily need a new array returned.</p>
+  </div>
+  </article>
+
+
+  <footer><!--All of the links -->
+    <a href="#">Facebook</a>
+    <a href="#">Twitter</a>
+    <a href="#">Messages</a>
+    <a href="#">Mail</a>
+    <a href="#">Share</a>
+  </footer>
+</body>
+</html>
