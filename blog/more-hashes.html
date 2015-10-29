@@ -31,7 +31,7 @@
       </div><!-- Logo and links-->
       </nav><!--End of navbar -->
   </header>
-  <div><!--I can't remember what class I set on my CSS to deal with my blog and I'm upset about today! Why did it have to be so learn it the hard way? I think I will see cheerful people speak about ruby on youtube all day to feel better class="Not-a-morning person" Cleaning this will be messy-->
+  <div class="column-2"><!--I can't remember what class I set on my CSS to deal with my blog and I'm upset about today! Why did it have to be so learn it the hard way? I think I will see cheerful people speak about ruby on youtube all day to feel better class="Not-a-morning person" Cleaning this will be messy-->
     <h2>More on Hashes</h2>
   <h3>The struggle is Real</h3>
   <h4>Warning!</h4>
@@ -42,7 +42,79 @@
   <p>I love you unknown English dude, thanks for that video I needed it :( He starts with symbols but goes deep in to hashes around minute 14. </p>
   <p>I'll be re-watching this like 10 times because I know we are not covering this stuff right now, or at least a part of it. I can only think about this English major girl in my cohort that seamed so cool just reading this and wanting to slap me for how painful it is to read. I'm sorry! I hope the video makes it better,  the guy as a wonderful accent</p>
   <iframe width="640" height="360" src="https://www.youtube.com/embed/mBXGBbEbXZY" frameborder="0" allowfullscreen></iframe>
+  <div class="code-piece">
+    <p>A HASH BEING CREATED</p>
+    my_hash = { "name" => "Eric",
+      "age" => 26,
+      "hungry?" => true
+    }
+
+    puts my_hash["name"]
+    puts my_hash["age"]
+    puts my_hash["hungry?"]
+    <p class="red">CONSOLE RESULT</p>
+    <p>Eric</p>
+    <p>26</p>
+    <p>true</p>
+    <p>nil</p>
+  </div>
+  <p> You can access the values witht he keys</p>
+  <div class="code-piece">
+    <p>CREATE AN EMPTY HASH</p>
+    <p>pets = Hash.new</p>
+    <p class="red">OUTCOME</p>
+    <p>{}</p>
+  </div>
+  <div class="code-piece">ADD THINGS
+    <p>pets = Hash.new</p>
+    <p>pets["Dosha"] = "dog"</p>
+    <p>pets["Filemon"] = "fish"</p>
+    <p class="red">OUTCOME</p>
+    <p>"fish"</p>
+  </div>
+  <p>Not sure why you only get fish out in the console, but the array has those elements</p>
+  <p>To Itarate Over Hashes</p>
+  <div class="code-piece">
+    <p>friends.each { |x| puts "#{x}" }</p>
+    <p>family.each { |x, y| puts "#{x}: #{y}" }</p>
+  </div>
+  <h4>Yes this is an actual tatto but in JS</h4>
+  <div class="med-pic-blog"><img src="../images/fear-display-none.jpg" alt="Fear display None"></div>
+  
 </div><!-- The whole main text of the blog, I'm not sure how I will style it I added an article tag because I saw other people using it-->
+def create_list
+  {}
+end
+
+
+# def add_item(food, quantity)
+#   item_list = create_list   
+#   item_list[food] = quantity
+#   p item_list
+# end
+
+def add_item(list, food, quantity)  #OMG OMG OMG OMG!!!!!!!
+  list[food] = quantity
+#   new_list.merge(list)
+#   return new_list
+end
+# create_list[food] = quantity sets "quantity" as the value for the "food" key
+list = create_list
+add_item(list, "apple", 9)
+add_item(list, "potato", 12)
+p list
+
+# def mode( array )
+#   hash = Hash.new(0) 
+#   array.each{|key| hash[key] += 1}
+#   hash.each do |key, val| 
+#       highest = key if val == hash.values.max 
+#       Array.new << highest
+#       puts highest
+#   end
+# end
+# p mode([1,2,2,4,4])
+
 
   <footer><!--All of the links -->
     <a href="#">Facebook</a>
