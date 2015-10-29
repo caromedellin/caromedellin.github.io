@@ -1,6 +1,9 @@
+
 h1{
   margin: auto;
   text-align: center;
+  height: 2em;
+  font-size: 3.5em;
 }
 h2{
   text-align: center;
@@ -14,17 +17,20 @@ div{
   height: 10em;
   margin: auto;
   border: 1px dashed white;
+  clear: both;
 }
 .logo-image {
     background-color: grey;
-    width: 90px;
-    height: 70px;
+    width: 8em;
+    height: 5em;
     display: block;
     float: left;
     border: 1px dashed white;
     background-image: url(../imgs/logo.png);
   background: 100% no-repeat center;
   background-size: cover;
+    position: fixed;
+    top: 0px;
   }
 ul li {
     display: block;
