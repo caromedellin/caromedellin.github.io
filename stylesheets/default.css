@@ -137,3 +137,65 @@ ul li {
   margin: auto;
   clear: both;
 }
+/*///////////        CONTACT LINKS     //////////*/
+.contact-links{
+  position: fixed;
+  bottom: 0px;
+}
+a.Facebook{
+   display: block;
+   float: left;
+    width: 48px;
+    height: 48px;
+    overflow: hidden; /* sets overflow outsid ethe element to hidden */
+    white-space: nowrap; /* prevent line breaks (text wrapping) */
+    text-indent: 100%; /* indents text outside the viewable area */
+    background: url(../imgs/Social-Icons.png) no-repeat; /* set background image */
+}
+a.Facebooka:hover {
+    background-position: 98px 0; /* background-position accepts two values the first being horizontal movement and the second being vertical movement. this will re-position image to left 185px on hover */
+}
+a.Twitter{
+   display: block;
+   float: left;
+    width: 48px;
+    height: 48px;
+    overflow: hidden; /* sets overflow outsid ethe element to hidden */
+    white-space: nowrap; /* prevent line breaks (text wrapping) */
+    text-indent: 100%; /* indents text outside the viewable area */
+    background: url(../Social-Icons.png) no-repeat; /* set background image */
+}
+a.Instagram{
+   display: block;
+   float: left;
+    width: 40px;
+    height: 40px;
+    overflow: hidden; /* sets overflow outsid ethe element to hidden */
+    white-space: nowrap; /* prevent line breaks (text wrapping) */
+    text-indent: 100%; /* indents text outside the viewable area */
+    background: url(../Social-Icons.png) no-repeat; /* set background image */
+}
+a.Mail{
+   display: block;
+   float: left;
+    width: 48px;
+    height: 48px;
+    overflow: hidden; /* sets overflow outsid ethe element to hidden */
+    white-space: nowrap; /* prevent line breaks (text wrapping) */
+    text-indent: 100%; /* indents text outside the viewable area */
+    background: url(../Social-Icons.png) no-repeat; /* set background image */
+}
+a.Share{
+   display: block;
+   float: left;
+    width: 40px;
+    height: 40px;
+    overflow: hidden; /* sets overflow outsid ethe element to hidden */
+    white-space: nowrap; /* prevent line breaks (text wrapping) */
+    text-indent: 100%; /* indents text outside the viewable area */
+    background: url(../Social-Icons.png) no-repeat; /* set background image */
+}
+/*////////////////   FOOTER    ////////////// */
+footer{
+  clear: both;
+}
