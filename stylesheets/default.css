@@ -7,6 +7,7 @@ h1{
 }
 h2{
   text-align: center;
+  clear: both;
 }
 div{
   background-color: grey;
@@ -76,6 +77,10 @@ ul li {
 .video-side{
   width: 30%
   border: 1px dashed white;
+}
+.video-large{
+  width: 50%;
+  margin: 0% 20%;
 }
 .main-text{
   clear: both;
