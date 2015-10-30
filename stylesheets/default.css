@@ -204,6 +204,8 @@ footer{
 .code-piece{
   background: black;
   color: yellow;
+  width: 80%;
+  margin: auto;
 }
 .red{
   color: red;

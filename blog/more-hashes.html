@@ -31,8 +31,9 @@
       </div><!-- Logo and links-->
       </nav><!--End of navbar -->
   </header>
+  <h2>More on Hashes and some Arrays</h2>
   <div class="column-2"><!--I can't remember what class I set on my CSS to deal with my blog and I'm upset about today! Why did it have to be so learn it the hard way? I think I will see cheerful people speak about ruby on youtube all day to feel better class="Not-a-morning person" Cleaning this will be messy-->
-    <h2>More on Hashes</h2>
+    
   <h3>The struggle is Real</h3>
   <h4>Warning!</h4>
   <p>Text to follow it's an introduction journal style type of just bitching about hashes any thing worthy of actually checking will have some code style text. You don't have to review it, it's just my journal at DBC.  Any actual info worthy of sharing will be a pic or have more format in the future.</p>
@@ -77,11 +78,33 @@
   <div class="code-piece">
     <p>friends.each { |x| puts "#{x}" }</p>
     <p>family.each { |x, y| puts "#{x}: #{y}" }</p>
-  </div>
+  </div><!--CODE-PIECE (ITARATE OVER HASHES)-->
   <h4>Yes this is an actual tatto but in JS</h4>
   <div class="med-pic-blog"><img src="../images/fear-display-none.jpg" alt="Fear display None"></div>
+
+  <h4>ITERATION OVER HASHES</h4>
+  <div class="code-piece">
+  <p>secret_identities.each do | x, y|</p>
+  <p>  puts "#{x}: #{y}"</p>
+  <p>end</p>
+  </div><!--CODE-PIECE (iteration over hashes)-->
+  <p>It's also good to know that you can put only the value or only the key</p>
   
 </div><!-- The whole main text of the blog, I'm not sure how I will style it I added an article tag because I saw other people using it-->
+<h2>Arrays</h2>
+<div class="column-2">
+<h3>Good example of Accesing nested arrays</h3>
+<p>This is from Code Academy and I think it nails it</p>
+  <div class="code-piece">
+  <p>s = [["ham", "swiss"], ["turkey", "cheddar"], ["roast beef", "gruyere"]]</p>
+  <p> </p>
+  <p>puts s</p>
+  <p>s.each do |sub_array|</p>
+  <p>    sub_array.each { |y| puts y} </p>
+  <p>end</p>
+  </div><!-- Code piece on nested array-->
+
+</div><!--ON ARRAYS TEXT BOX -->
 def create_list
   {}
 end
