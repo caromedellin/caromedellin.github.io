@@ -3,6 +3,7 @@
 <head>
   <title>DBC Blog</title>
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 </head>
 <body>
   <header>
@@ -55,6 +56,19 @@
     <p> So we use map new need a new array returned as well, we can use each when we don't necessarily need a new array returned.</p>
   </div>
   </article>
+
+  <div class="column-2">
+    <pre class="prettyprint">
+      array = ["Puppie", "Dog", "Raccoon"]
+      counter = 1
+      array.each do |animal|
+        puts "Prints the counter as a string #{counter}"
+        puts "Animals I need in my life #{animal}!"
+        counter += 2
+      end
+    </pre>
+    <p>This block will not print the counter to be 1,3 and then end because it's not iterating over the index of the array it will print the counter to be 1,2,5 because it's iterating over the number of elements in the array</p>
+  </div>
 
 
   <footer><!--All of the links -->
