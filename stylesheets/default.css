@@ -1,25 +1,32 @@
 
-h1{
-  margin: auto;
-  text-align: center;
-  height: 2em;
-  font-size: 3.5em;
-}
-h2{
-  text-align: center;
-  clear: both;
-}
+/* 
+
+
+font-family: 'Libre Baskerville', serif;
+font-family: 'Lobster', cursive;
+
+font-family: 'Crimson Text', serif;
+*/
+
 div{
   background-color: grey;
 }
-.nav{
+.fixed-top{
+  float: left;
+  width: 40%;
   position: fixed;
-  width: 90%
-  height: 10em;
-  margin: auto;
-  border: 1px dashed white;
-  clear: both;
+  height: 80px;
+  z-index: 1;
 }
+.nav-bar{
+  clear: both;
+  width: 55%;
+  display: inline-block;
+  float: right;
+  clear: both;
+  position: fixed;
+  right: 0px;
+ }
 .logo-image {
     background-color: grey;
     width: 8em;
@@ -31,20 +38,30 @@ div{
   background: 100% no-repeat center;
   background-size: cover;
     position: fixed;
-    top: 0px;
+    margin: 4px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-position: -10px -10px;
   }
-ul li {
-    display: block;
-    width: 60px;
-    float: left;
-    width: 18%;
+.nav-bar ul li {
+  display: block;
+  width: 17%;
+  float: left;
+  margin: auto;
+  text-align: center;
+  font-size: 1.3em;
+  padding: 2px;
 }
 .project-tabs{
   float: left;
   border: 1px dashed white;
-  width: 25%;
+  width: 22%;
+  height: 120px;
 }
-
+.break{
+  clear: both;
+  height: 100px;
+}
 .card{
   width: 25em;
   height: 17em;
@@ -75,12 +92,20 @@ ul li {
   border: 1px dashed white;
 }
 .video-side{
-  width: 30%
+  width: 30%;
   border: 1px dashed white;
+  display: inline-block;
+}
+video {
+  display: inline-block;
+  vertical-align: baseline;
 }
 .video-large{
-  width: 50%;
-  margin: 0% 20%;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  display: inline-block;
+  vertical-align: baseline;
 }
 .main-text{
   clear: both;
@@ -113,7 +138,7 @@ ul li {
     color: black;
 }
 .gallery{
-  width: 10em;
+  width: 30%;
   height: 10em;
   background-color: gray;
   border: 1px dashed white;
@@ -234,4 +259,48 @@ div.column-2{
 }
 div img{
   width: 100%;
+}
+/* ///////FONTS */
+html{
+  font-family: 'Libre Baskerville', serif;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+h1{
+  margin: auto;
+  text-align: right;
+  height: 2em;
+  font-size: 3.5em;
+  font-family: 'Lobster', bold;
+
+}
+h2{
+  text-align: center;
+  clear: both;
+}
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
 }
