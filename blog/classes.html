@@ -52,20 +52,21 @@ So I got asked at DBC to build a Bingo class, don't take my word for it, there m
 <h4>First I defined a class!</h4>
 
 
-This is the way you define a class:
+<p>This is the way you define a class:
 class Bingo
 end
 But you still have to give it the methos initialize, because if not, you class is just sitting there empty
-So you ask you class to initialize, that is kind of giving it some default values or things to do with the attributes. In this particular case y want my class to start with this board.
+So you ask you class to initialize, that is kind of giving it some default values or things to do with the attributes. In this particular case y want my class to start with this board.</p>
 <pre class="prettyprint">
 board = [["X", "X", "X", "X", "X"],
         ["X", "X", 75, "X", 73],
         ["X", 85, "X", 89, 57],
         ["X", "X", 96, "X", 51],
         ["X", 70, 54, 80, "X"]]</pre>
-And the reason why I want this is because it will serve me to later evaluate if a player has won a game. Later on I'll focus on generating my own costum boards but for now, this should sufice. As you can see in this table there are 3 ways to win a bingo game. That is with vertically, horizontally and in a diagonal.
+<p>And the reason why I want this is because it will serve me to later evaluate if a player has won a game. Later on I'll focus on generating my own costum boards but for now, this should sufice. As you can see in this table there are 3 ways to win a bingo game. That is with vertically, horizontally and in a diagonal.
  So I defined my board, and that is the board I used as driver code to test if the methods actually did something. But afterward it became this:
-  my first def board was actually 
+  my first def board was actually </p>
+<pre class="prettyprint">
 class BingoBoard
   attr_reader :game, :number, :bingo_board
 
@@ -73,6 +74,7 @@ class BingoBoard
     @bingo_board = board
     #print_board
   end
+</pre>
 On that 3rd line I tried testing calling another method that was defined later in my class, just to see if it would run it, turns out it does because the compiler first reads the class and make something out it (what ever compilers make out of classes) and the it just says to himself ok, I've got it but it doesn't do anything with it… until you call new_object = Class.new(argument) The argument is not always needed and it could be anything a number, a string, an array or a hash.
 In this case I called it like this new_game.Bingo.new(board)
 So then my computer (it's a she) told me this
