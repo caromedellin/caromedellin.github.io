@@ -109,15 +109,17 @@ So I proceded to define that name that I inteded to be "BINGO" but in an array b
   end
 </pre>
 <p>So I haven't said anything yet about the attributes, I had to write them, but as it turns out you don't want to just go write </p>
-Attr_accessor on everyvariable, because that would make you variables super vulnerable, even in their own method houses inside their factory (they are like the workers or maybe  the material) some object from the outside could come and steal them, change them or what have you. That's not nice, and you might be thinking, well whatever they are just like those cheap worker no one cares about, but I do and so does the the flow.  To make thing short … if every variable in a back system has attr_accesor on their variables you'd be able to change you balance from your account.
-So as I went I toyed around the variables giving them some access depending on what my computer asked me, but I started by making the reader and only as I was needing them. At the end it looked like this
-
+<p>Attr_accessor on everyvariable, because that would make you variables super vulnerable, even in their own method houses inside their factory (they are like the workers or maybe  the material) some object from the outside could come and steal them, change them or what have you. That's not nice, and you might be thinking, well whatever they are just like those cheap worker no one cares about, but I do and so does the the flow.  To make thing short … if every variable in a back system has attr_accesor on their variables you'd be able to change you balance from your account.
+So as I went I toyed around the variables giving them some access depending on what my computer asked me, but I started by making the reader and only as I was needing them. At the end it looked like this</p>
+<pre class="prettyprint">
 class BingoBoard
   attr_reader :game, :letter, :number
   attr_accessor :bingo_board
+</pre>
 
 
 But I'm sure online bingo_board don't have that setting, anyway it worked for now. There might be another way to revamp this
+<pre class="prettyprint">
   def cross_number
     row = @game.index(letter)
     @bingo_board = @bingo_board.each { |x|
@@ -125,8 +127,9 @@ But I'm sure online bingo_board don't have that setting, anyway it worked for no
         x[row] = "X"
       end}
   end
-
+</pre>
  Anyway so I call it several times to test it out, so far it seams to be working but I'm not sure if it's destrcutive
+ <pre class="prettyprint">
 "Annunciator calls on the mic:G89!"
 "Annunciator calls on the mic:G52!"
 "Annunciator calls on the mic:B56!"
@@ -136,10 +139,11 @@ But I'm sure online bingo_board don't have that setting, anyway it worked for no
 ["X", 85, "X", "X", 57]
 ["X", "X", 96, "X", 51]
 ["X", 70, 54, 80, "X"]
-
+</pre>
 And then I know it actually stored G89!
 
 So by now my class looks like this, with matching ends and other fancy things
+<pre class="prettyprint">
 class BingoBoard
   attr_reader :game, :letter, :number
   attr_accessor :bingo_board
@@ -186,12 +190,12 @@ class BingoBoard
       end}
   end
 end
-
+</pre>
 So I'm obviously super excited at this point? 
 But how to tell that you won?
 So I started thinking on the ways my very instructive video told me how to win a BINGO
 So first I had to flatten de array becuase I figured that every "X" that would be on the same row how have the same amount of spaces between the other "X" and it seamed harder to me to first access every sub array and the go to the index [0] but I'm sure there's a method to do that too. Ruby has all the cool methods
-
+<pre class="prettyprint">
   def did_i_win_vertical?
     board = @bingo_board.flatten
     i=0
@@ -208,10 +212,11 @@ So first I had to flatten de array becuase I figured that every "X" that would b
       p "YOU WIN (vertical)!!!"
     end
   end
-
+</pre>
 So the for i in (0..4) is basically so I could go make it evaluate every row, so if I start on the second item and add 5 that will also give me the element right inside it. Notice that my method is not destructive board is sort of like a temporal variable that only exists when I call I ask my computer did_i_win_vertical?
 I think she is very kind because she could have replied, why do you ask with such stupid formula, i obvioslu know what goes own under the engine of ruby.But I would have replied… it's not for you, it's for whom ever read this a few months from now, so that they'll know what's going on. It's best practice and it make collaborating more efficient. 
 So then I wanted to evaluate the horizontal way of winning and I wrote the following, because I wanted to use my inner array structure
+<pre class="prettyprint">
   def did_i_win_horizontal?
     board = @bingo_board
     board.each {|item|
@@ -227,7 +232,9 @@ So then I wanted to evaluate the horizontal way of winning and I wrote the follo
     }
     end
   end
+</pre>
 Then for both the diagonal one I went back to flattening my array, basically because it seamed easier that to substract or add to the index number of an inner subarray while iterating over every subarray to open it
+<pre class="prettyprint">
   def diagonal_win
     board = @bingo_board
      win = 0
@@ -252,8 +259,8 @@ Then for both the diagonal one I went back to flattening my array, basically bec
      end
     end
   end
-
 end
+</pre>
 <p>And ofcourse every time my computer told me I win because I never call on the new_board method I just used my first board that was already set to win every single time
 So I of course felt like I winner and my computer even told me so, Plenty of times actually!</p>
 
