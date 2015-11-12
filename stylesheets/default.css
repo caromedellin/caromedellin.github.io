@@ -9,7 +9,7 @@ font-family: 'Crimson Text', serif;
 */
 
 div{
-  background-color: grey;
+  margin: auto;
 }
 .fixed-top{
   float: left;
