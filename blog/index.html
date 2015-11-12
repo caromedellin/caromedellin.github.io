@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CoderByte solutions an complety unrelated notes</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<!-- link to Java file-->
+<script scr="js/new.js"></script>
+  </head>
+  <body>
+    <div class=randomtext> <!-- To start good habits such as drinking a glass of water after every alcohilic drink I shall start my first comment on my new class randomtext because I don't know yet how this will be styled, I wonder if this is a terrible thing to do keep a journal kind of thing on my web page, it must make it mad slow for no public reason... see what I did there?-->
+      <h1>I'm the first statement here!</h1>
+      <h5>already bootstrapped and feeling as fancy as a basic bitch that doesn't know there's more to life!</h5>
+      <h2>My Functions Notebook</h2>
+      <h4>This function it's supposed, according to code academy, make it easier to create arrays, and give them some hidden values, a part that is not public, so for this thing will be a bank account balance</h4>
+      <h5>I think I better hurry with this because the lady that's serving me it's already giving me the eye. When I said I need a safe spot to charge my things and do a little work she probably didn't picture I would lay a small army of components in her restaurant all precariously connected to one single plug. Current Status: Still at barcelona (Martes 18 de Agosto) </h5>
+
+    </div><!-- End of my RandomText class-->
+     <div class="jumbotron">
+        <h3>First Function ever!</h3>
+        <p class="lead">Array gals</p>
+        <input id="name" type="text">
+        <input id="lastName" type "text">
+        <p><a class="btn btn-lg btn-success" role="button" id="firstFunction" onClick="">Start the first Function</a></p>
+        <p id="change"></p>
+    </div>
+
+
+
+<header>After this secretly</header>
+<h4>there will be in JavaScript which is a terrible practice some CoderByte exercises, just because I like working secretly and 'comon you con see this in the inpect element kind</h4>
+<p>My current status is, after I visited Barcelona and the left there to travel to Copenhagen I instantly fell inlove with the city and forgot that I had to keep coding, and totallu broke the abc rule. But instead I mingled with the locals and made friends with other Traveler. Point is I'm back in this terribly styled website.
+Hey I'm trying to apply for some coding bootcamps so I promise this at some point will be styles but for now CodeByte ok? Oh I forgot I'm in NYC right now which is where I live, but I'm form Mexico so according to Donald Trump you wallet is gone from reading this and I also just raped you</p>
+<script type="text/javascript">
+//The horrible practice of in html JavaScript don't do this at home or while wearing a costume
+
+//First CoderByte function to Reverse a String
+function ReverseString (str){
+  str = str.split(" ");
+  str = str.reverse();
+  str = str.join(" ");
+  return str;
+  
+}
+
+//FIRST FACTORIAL
+//for this one was important to put a parentesis in (num-1)
+
+function firstFactorial(num){
+   if(num === 0){
+    num = 1;
+   } else {
+      for(var i = (num -1); i > 1; i--){
+      num *= i;
+     }
+   }
+   return num;
+}
+
+//LONGEST WORD = find the longest word in a string and report the length.
+
+function longestWord (sen){
+  var longest = "";
+  
+  sen = sen.replace(/[^a-z,A-Z,0-9\s]/g," ");
+  sen = sen.split(" "); //hace a str un array
+  for(var i = 0; i < sen.length; i++){
+    if(sen[i].length > longest.length){
+      longest = sen[i];
+      
+    }
+    return longest;
+  }
+
+}
+
+//Letter Changes
+//cambiar el orden de las letras para que imprima la siguiente y las vocales las ponga mayusculas
+function strReplace(str){
+  var alpha = "abcdefghijklmopqrstuvwxyz"
+  var vocales = "aeiou"
+  str = str.replace(/[^a-z,A-Z,]/g," ");
+  str = str.split(" ");
+  for(var i = 0; i < str.length ; i ++){
+
+  }
+  return str;
+}
+
+
+
+</script><!--CODERBYTE SCRIPT EX∫ -->
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">ReverseString</div>
+    <div class="panel-body">
+      <p>
+        function ReverseString (str){
+        str = str.split(" ");
+        str = str.reverse();
+        str = str.join(" ");
+        return str;
+    }
+      </p>
+  </div><!--Reverse String -->
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">firstFactorial</div>
+    <div class="panel-body">
+      <p>
+        function firstFactorial(num){
+   if(num === 0){
+    num = 1;
+   } else {
+      for(var i = (num -1); i > 1; i--){
+      num *= i;
+     }
+   }
+   return num;
+}
+      </p>
+  </div><!--firstFactorial -->
+
+   <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">longestWord</div>
+    <div class="panel-body">
+      <p>
+       function longestWord (sen){
+  var longest = "";
+  
+  sen = sen.replace(/[^a-z,A-Z,0-9\s]/g," ");
+  sen = sen.split(" "); //hace a str un array
+  for(var i = 0; i < sen.length; i++){
+    if(sen[i].length > longest.length){
+      longest = sen[i];
+      
+    }
+    return longest;
+  }
+
+}
+      </p>
+  </div><!--longestWord -->
+
+
+<div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Letter Changes</div>
+    <div class="panel-body">
+      <p>
+       function LetterChanges(str) {
+
+    var alpha = "abcdefghijklmnopqrstuvwxyz";
+    var newAlpha = "bcdEfghIjklmnOpqrstUvwxyzA";
+    var answer = "";
+    
+    for (i = 0, i < str.length; i++) {
+        if (alpha.indexOf(str[i]) !== -1) {
+            answer += newAlpha.charAt(alpha.indexOf(str[i]));
+        } else {
+            answer += str[i];
+        }
+    }
+    return answer;
+}
+
+      </p>
+  </div><!--Letter Changes -->
+
+<div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Another Function</div>
+    <div class="panel-body">
+      <p>
+       function goes here
+       
+      </p>
+  </div><!--Another Function -->
+
+<script type="text/javascript"></script>
+
+<div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Another Function</div>
+    <div class="panel-body">
+      <p>
+       function goes here
+       
+      </p>
+  </div><!--Another Function -->
+
+<script type="text/javascript"></script>
+
+<div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Another Function</div>
+    <div class="panel-body">
+      <p>
+       function goes here
+       
+      </p>
+  </div><!--Another Function -->
+
+<script type="text/javascript"></script>
+
+
+<div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Another Function</div>
+    <div class="panel-body">
+      <p>
+       function goes here
+       
+      </p>
+  </div><!--Another Function -->
+
+<script type="text/javascript"></script>
+
+<div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Another Function</div>
+    <div class="panel-body">
+      <p>
+       function goes here
+       
+      </p>
+  </div><!--Another Function -->
+
+<script type="text/javascript"></script>
+
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- my Java -->
+    <script src="js/new.js"></script>
+  </body>
+</html>

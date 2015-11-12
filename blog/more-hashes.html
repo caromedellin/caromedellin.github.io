@@ -1,0 +1,150 @@
+<!Doctype html>
+<html>
+<head>
+  <title>DBC Blog</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+</head>
+<body>
+  <header>
+    <h1>Carolina Medellin's Blog</h1>
+    <div>
+      <nav>
+
+      <div class="logo-image"><a href="http://www.urbandictionary.com/define.php?term=Vanarchy"></a></div>
+        <ul>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="">Profile</a>
+          </li>
+          <li>
+            <a href="/blog-template.html">Blog</a>
+          </li>
+          <li>
+            <a href="">Resume</a>
+          </li>
+          <li>
+            <a href="">Contact Info</a>
+          </li>
+        </ul>
+      </div><!-- Logo and links-->
+      </nav><!--End of navbar -->
+  </header>
+  <h2>More on Hashes and some Arrays</h2>
+  <div class="column-2"><!--I can't remember what class I set on my CSS to deal with my blog and I'm upset about today! Why did it have to be so learn it the hard way? I think I will see cheerful people speak about ruby on youtube all day to feel better class="Not-a-morning person" Cleaning this will be messy-->
+    
+  <h3>The struggle is Real</h3>
+  <h4>Warning!</h4>
+  <p>Text to follow it's an introduction journal style type of just bitching about hashes any thing worthy of actually checking will have some code style text. You don't have to review it, it's just my journal at DBC.  Any actual info worthy of sharing will be a pic or have more format in the future.</p>
+
+  <p>My whole hesitation to blogging was that I had not much to say about Ruby, since I'm only learning it! And I don't want to mislead anyone, also translating from my Spanish thinking to ill English grammar... I had my GSP 2.2 today and that felt like someone just kicked me in the crotch at 8am. So I'm going to share the learning resources that I like and a small description of why I like them. If I were to say something about my day today was that my guided pairing left me a feel of total dissatisfaction, anger and disappointment. Mainly because I'm finding Hashes very troubling so I soothed that feeling with this video of this English dude explaining :symbols</p>
+  <h4>Super cheerful English dude speaking about Ruby</h4>
+  <p>I love you unknown English dude, thanks for that video I needed it :( He starts with symbols but goes deep in to hashes around minute 14. </p>
+  <p>I'll be re-watching this like 10 times because I know we are not covering this stuff right now, or at least a part of it. I can only think about this English major girl in my cohort that seamed so cool just reading this and wanting to slap me for how painful it is to read. I'm sorry! I hope the video makes it better,  the guy as a wonderful accent</p>
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/mBXGBbEbXZY" frameborder="0" allowfullscreen></iframe>
+  <div class="code-piece">
+    <p>A HASH BEING CREATED</p>
+    my_hash = { "name" => "Eric",
+      "age" => 26,
+      "hungry?" => true
+    }
+
+    puts my_hash["name"]
+    puts my_hash["age"]
+    puts my_hash["hungry?"]
+    <p class="red">CONSOLE RESULT</p>
+    <p>Eric</p>
+    <p>26</p>
+    <p>true</p>
+    <p>nil</p>
+  </div>
+  <p> You can access the values witht he keys</p>
+  <div class="code-piece">
+    <p>CREATE AN EMPTY HASH</p>
+    <p>pets = Hash.new</p>
+    <p class="red">OUTCOME</p>
+    <p>{}</p>
+  </div>
+  <div class="code-piece">ADD THINGS
+    <p>pets = Hash.new</p>
+    <p>pets["Dosha"] = "dog"</p>
+    <p>pets["Filemon"] = "fish"</p>
+    <p class="red">OUTCOME</p>
+    <p>"fish"</p>
+  </div>
+  <p>Not sure why you only get fish out in the console, but the array has those elements</p>
+  <p>To Itarate Over Hashes</p>
+  <div class="code-piece">
+    <p>friends.each { |x| puts "#{x}" }</p>
+    <p>family.each { |x, y| puts "#{x}: #{y}" }</p>
+  </div><!--CODE-PIECE (ITARATE OVER HASHES)-->
+  <h4>Yes this is an actual tatto but in JS</h4>
+  <div class="med-pic-blog"><img src="../images/fear-display-none.jpg" alt="Fear display None"></div>
+
+  <h4>ITERATION OVER HASHES</h4>
+  <div class="code-piece">
+  <p>secret_identities.each do | x, y|</p>
+  <p>  puts "#{x}: #{y}"</p>
+  <p>end</p>
+  </div><!--CODE-PIECE (iteration over hashes)-->
+  <p>It's also good to know that you can put only the value or only the key</p>
+  
+</div><!-- The whole main text of the blog, I'm not sure how I will style it I added an article tag because I saw other people using it-->
+<h2>Arrays</h2>
+<div class="column-2">
+<h3>Good example of Accesing nested arrays</h3>
+<p>This is from Code Academy and I think it nails it</p>
+  <div class="code-piece">
+  <p>s = [["ham", "swiss"], ["turkey", "cheddar"], ["roast beef", "gruyere"]]</p>
+  <p> </p>
+  <p>puts s</p>
+  <p>s.each do |sub_array|</p>
+  <p>    sub_array.each { |y| puts y} </p>
+  <p>end</p>
+  </div><!-- Code piece on nested array-->
+
+</div><!--ON ARRAYS TEXT BOX -->
+def create_list
+  {}
+end
+
+
+# def add_item(food, quantity)
+#   item_list = create_list   
+#   item_list[food] = quantity
+#   p item_list
+# end
+
+def add_item(list, food, quantity)  #OMG OMG OMG OMG!!!!!!!
+  list[food] = quantity
+#   new_list.merge(list)
+#   return new_list
+end
+# create_list[food] = quantity sets "quantity" as the value for the "food" key
+list = create_list
+add_item(list, "apple", 9)
+add_item(list, "potato", 12)
+p list
+
+# def mode( array )
+#   hash = Hash.new(0) 
+#   array.each{|key| hash[key] += 1}
+#   hash.each do |key, val| 
+#       highest = key if val == hash.values.max 
+#       Array.new << highest
+#       puts highest
+#   end
+# end
+# p mode([1,2,2,4,4])
+
+
+  <footer><!--All of the links -->
+    <a href="#">Facebook</a>
+    <a href="#">Twitter</a>
+    <a href="#">Messages</a>
+    <a href="#">Mail</a>
+    <a href="#">Share</a>
+  </footer>
+</body>
+</html>
