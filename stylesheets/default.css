@@ -37,7 +37,7 @@ div{
     background-image: url(../imgs/logo.png);
   background: 100% no-repeat center;
   background-size: cover;
-    position: fixed;
+    /*position: fixed;*/
     margin: 4px;
     border-radius: 50%;
     border: 2px solid black;
@@ -289,7 +289,8 @@ h1{
   margin: auto;
   text-align: right;
   height: 2em;
-  font-size: 3.5em;
+  /*font-size: 3.5em;*/
+  font-size: 150%;
   font-family: 'Lobster', bold;
 
 }
