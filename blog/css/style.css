@@ -1,0 +1,307 @@
+
+/* 
+
+
+font-family: 'Libre Baskerville', serif;
+font-family: 'Lobster', cursive;
+
+font-family: 'Crimson Text', serif;
+*/
+
+div{
+  margin: auto;
+}
+.fixed-top{
+  float: left;
+  width: 40%;
+  position: fixed;
+  height: 80px;
+  z-index: 1;
+}
+.nav-bar{
+  clear: both;
+  width: 55%;
+  display: inline-block;
+  float: right;
+  clear: both;
+  position: fixed;
+  right: 0px;
+ }
+.logo-image {
+    background-color: grey;
+    width: 8em;
+    height: 5em;
+    display: block;
+    float: left;
+    border: 1px dashed white;
+    background-image: url(../../imgs/logo.png);
+  background: 100% no-repeat center;
+  background-size: cover;
+    /*position: fixed;*/
+    margin: 4px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-position: -10px -10px;
+  }
+.nav-bar ul li {
+  display: block;
+  width: 17%;
+  float: left;
+  margin: auto;
+  text-align: center;
+  font-size: 1.3em;
+  padding: 2px;
+}
+.project-tabs{
+  float: left;
+  border: 1px dashed white;
+  width: 22%;
+  height: 120px;
+}
+.break{
+  clear: both;
+  height: 100px;
+}
+.card{
+  width: 25em;
+  height: 17em;
+  clear: both;
+  float: left;
+  margin: 1px dashed white;
+  overflow: scroll;
+
+}
+.BCimage{
+  width: 40%;
+  height: 100%;
+  position: relative;
+  float: left;
+  border: 1px dashed white;
+  background-image: url(../imgs/pic.JPG);
+  background: 100% no-repeat center;
+  background-size: cover;
+  margin-left: 15px;
+  border-radius: 10%;
+}
+.card-text{
+  width: 50%;
+  display: block;
+  position: relative;
+  float: right;
+  overflow: scroll;
+  border: 1px dashed white;
+}
+.video-side{
+  width: 30%;
+  border: 1px dashed white;
+  display: inline-block;
+}
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+.video-large{
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  display: inline-block;
+  vertical-align: baseline;
+}
+.main-text{
+  clear: both;
+  text-align: justify;
+  border: 1px dashed white;
+}
+.nav-pic{
+  border-radius: 50%;
+  width: 20em;
+  height: 20em;
+  border: 1px dashed white;
+}
+.secondnav-button {
+    width: 10em;
+    height: 10em;
+    background-color: blue;
+    border: 1px dashed white;
+    display: block;
+    text-align: center;
+    line-height: 10em;
+}
+.secondnav-sub-button{
+    width: 5em;
+    height: 3em;
+    background-color: blue;
+    border: 1px dashed white;
+    display: block;
+    text-align: center;
+    line-height: 10em;
+    color: black;
+}
+.gallery{
+  width: 30%;
+  height: 10em;
+  background-color: gray;
+  border: 1px dashed white;
+
+}
+/*///////////////// Media query///////*/
+
+@media (max-width: 600px) {
+  .card-text {
+    display: none;
+  }
+}
+.main-blog-text{
+  
+}
+.big-button{
+  width: 50%;
+  height: 10%;
+  border: 2px white solid;
+  border-radius: 15%;
+  margin: auto;
+  clear: both;
+}
+/*///////////        CONTACT LINKS     //////////*/
+.contact-links{
+  position: fixed;
+  bottom: 0px;
+}
+a.Facebook{
+   display: block;
+   float: left;
+    width: 48px;
+    height: 48px;
+    overflow: hidden; /* sets overflow outsid ethe element to hidden */
+    white-space: nowrap; /* prevent line breaks (text wrapping) */
+    text-indent: 100%; /* indents text outside the viewable area */
+    background: url(../../imgs/Social-Icons.png) no-repeat; /* set background image */
+}
+a.Facebooka:hover {
+    background-position: 98px 0; /* background-position accepts two values the first being horizontal movement and the second being vertical movement. this will re-position image to left 185px on hover */
+}
+a.Twitter{
+   display: block;
+   float: left;
+    width: 48px;
+    height: 48px;
+    overflow: hidden; /* sets overflow outsid ethe element to hidden */
+    white-space: nowrap; /* prevent line breaks (text wrapping) */
+    text-indent: 100%; /* indents text outside the viewable area */
+    background: url(../Social-Icons.png) no-repeat; /* set background image */
+}
+a.Instagram{
+   display: block;
+   float: left;
+    width: 40px;
+    height: 40px;
+    overflow: hidden; /* sets overflow outsid ethe element to hidden */
+    white-space: nowrap; /* prevent line breaks (text wrapping) */
+    text-indent: 100%; /* indents text outside the viewable area */
+    background: url(../Social-Icons.png) no-repeat; /* set background image */
+}
+a.Mail{
+   display: block;
+   float: left;
+    width: 48px;
+    height: 48px;
+    overflow: hidden; /* sets overflow outsid ethe element to hidden */
+    white-space: nowrap; /* prevent line breaks (text wrapping) */
+    text-indent: 100%; /* indents text outside the viewable area */
+    background: url(../Social-Icons.png) no-repeat; /* set background image */
+}
+a.Share{
+   display: block;
+   float: left;
+    width: 40px;
+    height: 40px;
+    overflow: hidden; /* sets overflow outsid ethe element to hidden */
+    white-space: nowrap; /* prevent line breaks (text wrapping) */
+    text-indent: 100%; /* indents text outside the viewable area */
+    background: url(../Social-Icons.png) no-repeat; /* set background image */
+}
+/*////////////////   FOOTER    ////////////// */
+footer{
+  clear: both;
+}
+
+/*///// TEXT STYLES in divs /////*/
+.code-piece{
+  background: black;
+  color: yellow;
+  width: 80%;
+  margin: auto;
+}
+.red{
+  color: red;
+}
+/*/////////COLUMNS AND LAYOUTS//////*/
+div.column-2{
+  clear: both;
+  width: 80%;
+  margin: auto;
+  border: 3px solid black;
+  border-radius: 5%;
+  padding: 4em;
+}
+.column-2 {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+
+/*///// MEDIA PICS AND VIDEOS //////*/
+.med-pic-blog{
+  margin: auto;
+  border: solid black 2px;
+  width: 90%;
+  overflow: hidden;
+}
+div img{
+  width: 100%;
+}
+/* ///////FONTS */
+html{
+  font-family: 'Libre Baskerville', serif;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+h1{
+  margin: auto;
+  text-align: right;
+  height: 2em;
+  /*font-size: 3.5em;*/
+  font-size: 150%;
+  font-family: 'Lobster', bold;
+
+}
+h2{
+  text-align: center;
+  clear: both;
+}
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
